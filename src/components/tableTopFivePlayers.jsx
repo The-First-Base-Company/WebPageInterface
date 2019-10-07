@@ -22,12 +22,9 @@ class tableTopFivePlayers extends Component {
                 <h5>1.</h5>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/mike-trout-545361"
-                  target="popup"
-                >
+                <a href={this.props.linkFirstPlayer} target="popup">
                   <Image
-                    src="https://securea.mlb.com/mlb/images/players/head_shot/545361.jpg"
+                    src={this.props.photoFirstPlayer}
                     alt="logo"
                     height="80"
                     className="d-inline-block align-left"
@@ -36,26 +33,20 @@ class tableTopFivePlayers extends Component {
                 </a>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/mike-trout-545361"
-                  target="popup"
-                >
-                  Mike Trout
+                <a href={this.props.linkFirstPlayer} target="popup">
+                  {this.props.firstPlayer}
                 </a>
               </td>
-              <td>Angels</td>
+              <td>{this.props.teamFirstPlayer}</td>
             </tr>
             <tr>
               <td>
                 <h5>2.</h5>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/mookie-betts-605141"
-                  target="popup"
-                >
+                <a href={this.props.linkSecondPlayer} target="popup">
                   <Image
-                    src="https://securea.mlb.com/mlb/images/players/head_shot/605141.jpg"
+                    src={this.props.photoSecondPlayer}
                     alt="logo"
                     height="80"
                     className="d-inline-block align-left"
@@ -64,26 +55,20 @@ class tableTopFivePlayers extends Component {
                 </a>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/mookie-betts-605141"
-                  target="popup"
-                >
-                  Mookie Betts
+                <a href={this.props.linkSecondPlayer} target="popup">
+                  {this.props.secondPlayer}
                 </a>
               </td>
-              <td>Red Sox</td>
+              <td>{this.props.teamSecondPlayer}</td>
             </tr>
             <tr>
               <td>
                 <h5>3.</h5>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/jose-ramirez-608070"
-                  target="popup"
-                >
+                <a href={this.props.linkThirdPlayer} target="popup">
                   <Image
-                    src="https://securea.mlb.com/mlb/images/players/head_shot/608070.jpg"
+                    src={this.props.photoThirdPlayer}
                     alt="logo"
                     height="80"
                     className="d-inline-block align-left"
@@ -92,26 +77,20 @@ class tableTopFivePlayers extends Component {
                 </a>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/jose-ramirez-608070"
-                  target="popup"
-                >
-                  José Ramírez
+                <a href={this.props.linkThirdPlayer} target="popup">
+                  {this.props.thirdPlayer}
                 </a>
               </td>
-              <td>Indians</td>
+              <td>{this.props.teamThirdPlayer}</td>
             </tr>
             <tr>
               <td>
                 <h5>4.</h5>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/francisco-lindor-596019"
-                  target="popup"
-                >
+                <a href={this.props.linkFourthPlayer} target="popup">
                   <Image
-                    src="https://securea.mlb.com/mlb/images/players/head_shot/596019.jpg"
+                    src={this.props.photoFourthPlayer}
                     alt="logo"
                     height="80"
                     className="d-inline-block align-left"
@@ -120,26 +99,20 @@ class tableTopFivePlayers extends Component {
                 </a>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/francisco-lindor-596019"
-                  target="popup"
-                >
-                  Francisco Lindor
+                <a href={this.props.linkFourthPlayer} target="popup">
+                  {this.props.fourthPlayer}
                 </a>
               </td>
-              <td>Indians</td>
+              <td>{this.props.teamFourthPlayer}</td>
             </tr>
             <tr>
               <td>
                 <h5>5.</h5>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/nolan-arenado-571448"
-                  target="popup"
-                >
+                <a href={this.props.linkFifthPlayer} target="popup">
                   <Image
-                    src="https://securea.mlb.com/mlb/images/players/head_shot/571448.jpg"
+                    src={this.props.photoFifthPlayer}
                     alt="logo"
                     height="80"
                     className="d-inline-block align-left"
@@ -148,14 +121,11 @@ class tableTopFivePlayers extends Component {
                 </a>
               </td>
               <td>
-                <a
-                  href="https://www.mlb.com/player/nolan-arenado-571448"
-                  target="popup"
-                >
-                  Nolan Arenado
+                <a href={this.props.linkFifthPlayer} target="popup">
+                  {this.props.fifthPlayer}
                 </a>
               </td>
-              <td>Rockies</td>
+              <td>{this.props.teamFifthPlayer}</td>
             </tr>
           </tbody>
         </Table>

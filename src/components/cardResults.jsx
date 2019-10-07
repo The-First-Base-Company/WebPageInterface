@@ -7,7 +7,7 @@ class cardResults extends Component {
     return (
       <div>
         <Card>
-          <Table responsive="md">
+          <Table responsive="sm">
             <thead>
               <tr>
                 <th>Team</th>
@@ -46,35 +46,77 @@ class cardResults extends Component {
             <tbody>
               <tr>
                 <td>
-                  <a href="https://www.mlb.com/angels" target="popup">
+                  <a href={this.props.linkLocalTeamResults} target="popup">
                     <img
-                      src="https://securea.mlb.com/assets/images/3/1/2/267952312/cuts/320x180/cut.jpg"
+                      src={this.props.localLogoResults}
                       alt="logo"
-                      height="40"
+                      height="35"
                       className="d-inline-block align-left"
                     />
-                    Los Angels Angels
+                    {this.props.localTeamResults}
                   </a>
                 </td>
-                <td>5</td>
-                <td>8</td>
-                <td>2</td>
+                <td>{this.props.localInner1}</td>
+                <td>{this.props.localInner2}</td>
+                <td>{this.props.localInner3}</td>
+                <td>{this.props.localInner4}</td>
+                <td>{this.props.localInner5}</td>
+                <td>{this.props.localInner6}</td>
+                <td>{this.props.localInner7}</td>
+                <td>{this.props.localInner8}</td>
+                <td>{this.props.localInner9}</td>
+                <td>
+                  <font color="blue">
+                    <h6>{this.props.localRuns}</h6>
+                  </font>
+                </td>
+                <td>
+                  <font color="green">
+                    <h6>{this.props.localHits}</h6>
+                  </font>
+                </td>
+                <td>
+                  <font color="red">
+                    <h6>{this.props.localErrors}</h6>
+                  </font>
+                </td>
               </tr>
               <tr>
                 <td>
-                  <a href="https://www.mlb.com/indians" target="popup">
+                  <a href={this.props.linkVisitTeamResults} target="popup">
                     <img
-                      src="https://securea.mlb.com/assets/images/2/9/4/267952294/cuts/320x180/cut.jpg"
+                      src={this.props.visitLogoResults}
                       alt="logo"
-                      height="40"
+                      height="35"
                       className="d-inline-block align-left"
                     />
-                    Cleveland Indians
+                    {this.props.visitTeamResults}
                   </a>
                 </td>
-                <td>3</td>
-                <td>6</td>
-                <td>1</td>
+                <td>{this.props.visitInner1}</td>
+                <td>{this.props.visitInner2}</td>
+                <td>{this.props.visitInner3}</td>
+                <td>{this.props.visitInner4}</td>
+                <td>{this.props.visitInner5}</td>
+                <td>{this.props.visitInner6}</td>
+                <td>{this.props.visitInner7}</td>
+                <td>{this.props.visitInner8}</td>
+                <td>{this.props.visitInner9}</td>
+                <td>
+                  <font color="blue">
+                    <h6>{this.props.visitRuns}</h6>
+                  </font>
+                </td>
+                <td>
+                  <font color="green">
+                    <h6>{this.props.visitHits}</h6>
+                  </font>
+                </td>
+                <td>
+                  <font color="red">
+                    <h6>{this.props.visitErrors}</h6>
+                  </font>
+                </td>
               </tr>
             </tbody>
           </Table>

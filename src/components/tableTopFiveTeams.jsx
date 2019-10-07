@@ -13,14 +13,14 @@ class tableTopFiveTeams extends Component {
                 <h5>1.</h5>
               </td>
               <td>
-                <a href="https://www.mlb.com/angels" target="popup">
+                <a href={this.props.linkFirstTeam} target="popup">
                   <img
-                    src="https://securea.mlb.com/assets/images/3/1/2/267952312/cuts/320x180/cut.jpg"
+                    src={this.props.logoFirstTeam}
                     alt="logo"
                     height="40"
                     className="d-inline-block align-left"
                   />
-                  Los Angels Angels
+                  {this.props.firstTeam}
                 </a>
               </td>
             </tr>
@@ -29,14 +29,14 @@ class tableTopFiveTeams extends Component {
                 <h5>2.</h5>
               </td>
               <td>
-                <a href="https://www.mlb.com/redsox" target="popup">
+                <a href={this.props.linkSecondTeam} target="popup">
                   <img
-                    src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
+                    src={this.props.logoSecondTeam}
                     alt="logo"
                     height="40"
                     className="d-inline-block align-left"
                   />
-                  Boston Red Sox
+                  {this.props.secondTeam}
                 </a>
               </td>
             </tr>
@@ -45,14 +45,14 @@ class tableTopFiveTeams extends Component {
                 <h5>3.</h5>
               </td>
               <td>
-                <a href="https://www.mlb.com/yankees" target="popup">
+                <a href={this.props.linkThirdTeam} target="popup">
                   <img
-                    src="https://securea.mlb.com/assets/images/4/2/0/267952420/cuts/320x180/cut.jpg"
+                    src={this.props.logoThirdTeam}
                     alt="logo"
                     height="40"
                     className="d-inline-block align-left"
                   />
-                  New York Yankees
+                  {this.props.thirdTeam}
                 </a>
               </td>
             </tr>
@@ -61,14 +61,14 @@ class tableTopFiveTeams extends Component {
                 <h5>4.</h5>
               </td>
               <td>
-                <a href="https://www.mlb.com/indians" target="popup">
+                <a href={this.props.linkFourthTeam} target="popup">
                   <img
-                    src="https://securea.mlb.com/assets/images/2/9/4/267952294/cuts/320x180/cut.jpg"
+                    src={this.props.logoFourthTeam}
                     alt="logo"
                     height="40"
                     className="d-inline-block align-left"
                   />
-                  Cleveland Indians
+                  {this.props.fourthTeam}
                 </a>
               </td>
             </tr>
@@ -77,14 +77,14 @@ class tableTopFiveTeams extends Component {
                 <h5>5.</h5>
               </td>
               <td>
-                <a href="https://www.mlb.com/rockies" target="popup">
+                <a href={this.props.linkFifthTeam} target="popup">
                   <img
-                    src="https://securea.mlb.com/assets/images/7/2/4/267951724/cuts/320x180/cut.jpg"
+                    src={this.props.logoFifthTeam}
                     alt="logo"
                     height="40"
                     className="d-inline-block align-left"
                   />
-                  Colorado Rockies
+                  {this.props.fifthTeam}
                 </a>
               </td>
             </tr>

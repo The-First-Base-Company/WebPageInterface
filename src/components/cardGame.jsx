@@ -10,38 +10,38 @@ class cardGame extends Component {
           <Table responsive="md">
             <thead>
               <tr>
-                <h5>19:00</h5>
+                <h5>{this.props.time}</h5>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  <a href="https://www.mlb.com/redsox" target="popup">
+                  <a href={this.props.linkLocalTeam} target="popup">
                     <img
-                      src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
+                      src={this.props.localTeamLogo}
                       alt="logo"
                       height="70"
                       className="d-inline-block align-left"
                     />
-                    Boston Red Sox
+                    {this.props.localTeam}
                   </a>
                 </td>
                 <td>
-                  <h6>52%</h6>
+                  <h6>{this.props.localPct}</h6>
                 </td>
                 <td>
-                  <a href="https://www.mlb.com/yankees" target="popup">
+                  <a href={this.props.linkVisitTeam} target="popup">
                     <img
-                      src="https://securea.mlb.com/assets/images/4/2/0/267952420/cuts/320x180/cut.jpg"
+                      src={this.props.visitTeamLogo}
                       alt="logo"
                       height="70"
                       className="d-inline-block align-left"
                     />
-                    New York Yankees
+                    {this.props.visitTeam}
                   </a>
                 </td>
                 <td>
-                  <h6>48%</h6>
+                  <h6>{this.props.visitPct}</h6>
                 </td>
               </tr>
             </tbody>
