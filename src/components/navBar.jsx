@@ -8,8 +8,9 @@ import { ButtonGroup } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
 import { DropdownButton } from "react-bootstrap";
 import { Table } from "react-bootstrap";
+import { DropdownItem } from "react-bootstrap";
 import LoginModal from "./loginModal";
-import DropdownItem from "react-bootstrap/DropdownItem";
+import SigninModal from "./signinModal";
 
 const NavBar = () => {
   return (
@@ -27,21 +28,35 @@ const NavBar = () => {
         <Button variant="danger">Home</Button>
       </Nav.Link>
       <Nav.Link href="#results">
-        <Button variant="warning">Results</Button>
+        <Button variant="warning" disabled>
+          Results
+        </Button>
       </Nav.Link>
       <Nav.Link href="#teams">
         <Dropdown as={ButtonGroup}>
-          <Button variant="warning">Teams</Button>
+          <Button variant="warning" disabled>
+            Teams
+          </Button>
 
-          <Dropdown.Toggle split variant="warning" id="dropdown-split-basic" />
+          <Dropdown.Toggle
+            split
+            variant="warning"
+            id="dropdown-split-basic"
+            disabled
+          />
 
           <Dropdown.Menu></Dropdown.Menu>
         </Dropdown>
       </Nav.Link>
       <Nav.Link href="#players">
-        <Button variant="warning">Players</Button>
+        <Button variant="warning" disabled>
+          Players
+        </Button>
       </Nav.Link>
       <Navbar.Collapse className="justify-content-end">
+        <Nav.Link href="#">
+          <SigninModal />
+        </Nav.Link>
         <Nav.Link href="#">
           <LoginModal />
         </Nav.Link>

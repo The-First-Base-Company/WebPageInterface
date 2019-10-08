@@ -6,6 +6,7 @@ import { InputGroup } from "react-bootstrap";
 import { FormControl } from "react-bootstrap";
 import loginIcon from "./loginIcon.png";
 import passwordIcon from "./passwordIcon.ico";
+import signinIcon from "./signinIcon.png";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -16,7 +17,7 @@ function MyVerticallyCenteredModal(props) {
       centered
     >
       <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">Log in</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">Sign in</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div>
@@ -49,7 +50,7 @@ function MyVerticallyCenteredModal(props) {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={props.onHide}>
-          Login
+          Sign in
         </Button>
         <Button variant="danger" onClick={props.onHide}>
           Close
@@ -65,7 +66,7 @@ function App() {
   return (
     <ButtonToolbar>
       <Button onClick={() => setModalShow(true)}>
-        <img src={loginIcon} alt="login" height="45 " />
+        <img src={signinIcon} alt="signin" height="45 " />
       </Button>
 
       <MyVerticallyCenteredModal
@@ -76,10 +77,10 @@ function App() {
   );
 }
 
-class loginModal extends Component {
+class signinModal extends Component {
   render() {
     return <App />;
   }
 }
 
-export default loginModal;
+export default signinModal;
