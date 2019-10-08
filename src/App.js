@@ -5,8 +5,8 @@ import NavBar from "./components/navBar";
 import TableTopFivePlayers from "./components/tableTopFivePlayers";
 import TableTopFiveTeams from "./components/tableTopFiveTeams";
 import CardGame from "./components/cardGame";
-import TablePlayers from "./components/tablePlayers";
 import CardResults from "./components/cardResults";
+import TablePlayers from "./components/tablePlayers";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Card } from "react-bootstrap";
@@ -114,38 +114,6 @@ class App extends Component {
                   visitHits="15"
                   visitErrors="3"
                 />
-                <CardResults
-                  linkLocalTeamResults="https://www.mlb.com/dbacks"
-                  localLogoResults="https://securea.mlb.com/assets/images/7/1/8/267947718/cuts/320x180/cut.jpg"
-                  localTeamResults="Diamondbacks"
-                  localInner1="0"
-                  localInner2="1"
-                  localInner3="0"
-                  localInner4="2"
-                  localInner5="0"
-                  localInner6="0"
-                  localInner7="1"
-                  localInner8="0"
-                  localInner9="2"
-                  localRuns="6"
-                  localHits="10"
-                  localErrors="1"
-                  linkVisitTeamResults="https://www.mlb.com/phillies"
-                  visitLogoResults="https://securea.mlb.com/assets/images/8/6/0/267951860/cuts/320x180/cut.jpg"
-                  visitTeamResults="Phillies"
-                  visitInner1="1"
-                  visitInner2="0"
-                  visitInner3="0"
-                  visitInner4="2"
-                  visitInner5="2"
-                  visitInner6="1"
-                  visitInner7="1"
-                  visitInner8="0"
-                  visitInner9="2"
-                  visitRuns="9"
-                  visitHits="15"
-                  visitErrors="3"
-                />
               </div>
             </Col>
             <Col s={6} md={4}>
@@ -197,10 +165,7 @@ class App extends Component {
               </Card>
             </Col>
           </Row>
-          <Row>
-            <Col s={12} md={8}></Col>
-            <Col s={6} md={4}></Col>
-          </Row>
+          <Row></Row>
         </main>
       </React.Fragment>
     );

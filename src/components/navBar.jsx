@@ -3,10 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "./FirstBase.png";
 import { Navbar } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
-import { ButtonGroup } from "react-bootstrap";
 import { Button } from "react-bootstrap";
-import { Card } from "react-bootstrap";
-import { CardGroup } from "react-bootstrap";
+import { ButtonGroup } from "react-bootstrap";
+import { Dropdown } from "react-bootstrap";
+import { DropdownButton } from "react-bootstrap";
+import { Table } from "react-bootstrap";
+import LoginModal from "./loginModal";
+import DropdownItem from "react-bootstrap/DropdownItem";
 
 const NavBar = () => {
   return (
@@ -27,13 +30,72 @@ const NavBar = () => {
         <Button variant="warning">Results</Button>
       </Nav.Link>
       <Nav.Link href="#teams">
-        <Button variant="warning">Teams</Button>
+        <Dropdown as={ButtonGroup}>
+          <Button variant="warning">Teams</Button>
+
+          <Dropdown.Toggle split variant="warning" id="dropdown-split-basic" />
+
+          <Dropdown.Menu></Dropdown.Menu>
+        </Dropdown>
       </Nav.Link>
       <Nav.Link href="#players">
         <Button variant="warning">Players</Button>
       </Nav.Link>
+      <Navbar.Collapse className="justify-content-end">
+        <Nav.Link href="#">
+          <LoginModal />
+        </Nav.Link>
+      </Navbar.Collapse>
     </Navbar>
   );
 };
 
 export default NavBar;
+
+/*
+<Table>
+              <thead>
+                <tr>
+                  <th>AL EAST</th>
+                  <th>AL CENTRAL</th>
+                  <th>AL WEST</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href="mlb.com/redsox" target="popup">
+                      <img
+                        src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
+                        alt="logo"
+                        height="25"
+                        className="d-inline-block align-left"
+                      />
+                      Boston Red Sox
+                    </a>
+                  </td>
+                  <td>
+                    <a href="mlb.com/redsox" target="popup">
+                      <img
+                        src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
+                        alt="logo"
+                        height="25"
+                        className="d-inline-block align-left"
+                      />
+                      Boston Red Sox
+                    </a>
+                  </td>
+                  <td>
+                    <a href="mlb.com/redsox" target="popup">
+                      <img
+                        src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
+                        alt="logo"
+                        height="25"
+                        className="d-inline-block align-left"
+                      />
+                      Boston Red Sox
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </Table>*/

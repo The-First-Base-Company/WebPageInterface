@@ -82,7 +82,7 @@ export default function StickyHeadTable() {
   return (
     <Paper className={classes.root}>
       <div className={classes.tableWrapper}>
-        <Table tableTopFive>
+        <Table tableTopFive responsive>
           <TableHead>
             <TableRow>
               {columns.map(column => (
