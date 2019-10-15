@@ -9,20 +9,27 @@ import { Dropdown } from "react-bootstrap";
 import { DropdownButton } from "react-bootstrap";
 import { Table } from "react-bootstrap";
 import { DropdownItem } from "react-bootstrap";
-import LoginModal from "./loginModal";
-import SigninModal from "./signinModal";
+import LoginModal from "../loginModal";
+import SigninModal from "../signinModal";
+
+import './Nav.css';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
+
   return (
     <Navbar bg="primary" variant="dark">
       <Navbar.Brand href="#home">
-        <img
-          src={logo}
-          alt="logo"
-          height="80"
-          className="d-inline-block align-center"
-        />
+        <Link className='navBar' to='/'>
+          <img
+            src={logo}
+            alt="logo"
+            height="80"
+            className="d-inline-block align-center"
+          />
+        
         {"      First Base Company"}
+        </Link>
       </Navbar.Brand>
       <Nav.Link href="#home">
         <Button variant="danger">Home</Button>

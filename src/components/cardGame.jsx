@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Card } from "react-bootstrap";
 import { Table } from "react-bootstrap";
 
-class cardGame extends Component {
+class CardGame extends Component {
   render() {
     return (
       <div>
@@ -52,7 +52,7 @@ class cardGame extends Component {
   }
 }
 
-export default cardGame;
+export default CardGame;
 /*
 <div>
         <Card body>
