@@ -12,6 +12,7 @@ import { DropdownItem } from "react-bootstrap";
 import LoginModal from "../loginModal";
 import SigninModal from "../signinModal";
 
+import Login from './../Login/Login'
 import './Nav.css';
 import { Link } from 'react-router-dom';
 
