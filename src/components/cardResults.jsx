@@ -38,6 +38,9 @@ class cardResults extends Component {
                 <th>
                   <h6>9</h6>
                 </th>
+                <th>
+                  <h6>{this.props.inner10}</h6>
+                </th>
                 <th>R</th>
                 <th>H</th>
                 <th>E</th>
@@ -65,6 +68,7 @@ class cardResults extends Component {
                 <td>{this.props.localInner7}</td>
                 <td>{this.props.localInner8}</td>
                 <td>{this.props.localInner9}</td>
+                <td>{this.props.localInner10}</td>
                 <td>
                   <font color="blue">
                     <h6>{this.props.localRuns}</h6>
@@ -102,6 +106,7 @@ class cardResults extends Component {
                 <td>{this.props.visitInner7}</td>
                 <td>{this.props.visitInner8}</td>
                 <td>{this.props.visitInner9}</td>
+                <td>{this.props.visitInner10}</td>
                 <td>
                   <font color="blue">
                     <h6>{this.props.visitRuns}</h6>
