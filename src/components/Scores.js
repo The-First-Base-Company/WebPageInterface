@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import CardResults from "./cardResults";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col, Card, Alert, Badge } from "react-bootstrap";
 
 class Results extends Component {
   render() {
     return (
       <React.Fragment>
+        <Alert variant="success">
+          <h1 align="center">
+            <Badge variant="success">Scores</Badge>
+          </h1>
+        </Alert>
         <main className="container">
           <br />
           <Row>

@@ -3,12 +3,26 @@ import TableTopFivePlayers from "./tableTopFivePlayers";
 import TableTopFiveTeams from "./tableTopFiveTeams";
 import CardGame from "./cardGame";
 import CardResults from "./cardResults";
-import { Row, Col, Card, Jumbotron, Container } from "react-bootstrap";
+import homeIcon from "./home.png";
+import {
+  Row,
+  Col,
+  Card,
+  Jumbotron,
+  Container,
+  Alert,
+  Badge
+} from "react-bootstrap";
 
 class Home extends Component {
   render() {
     return (
       <React.Fragment>
+        <Alert variant="dark">
+          <h1 align="center">
+            <Badge variant="dark">Home</Badge>
+          </h1>
+        </Alert>
         <Jumbotron fluid>
           <Container>
             <Row>

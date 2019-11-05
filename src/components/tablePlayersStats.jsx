@@ -9,23 +9,23 @@ import TablePagination from "@material-ui/core/TablePagination";
 import TableRow from "@material-ui/core/TableRow";
 
 const columns = [
-  { id: "name", label: "Name", minWidth: 30, align: "center" },
-  { id: "team", label: "Team", minWidth: 18, align: "center" },
-  { id: "pos", label: "Position", minWidth: 15, align: "center" },
-  { id: "type", label: "Type", minWidth: 18, align: "center" },
-  { id: "numGames", label: "# of Games", minWidth: 18, align: "center" },
-  { id: "avgHits", label: "Avg Hits", minWidth: 18, align: "center" },
-  { id: "atBat", label: "# At Bat", minWidth: 18, align: "center" },
-  { id: "runs", label: "Runs", minWidth: 18, align: "center" },
-  { id: "hits", label: "Hits", minWidth: 18, align: "center" },
-  { id: "hr", label: "Home Runs", minWidth: 18, align: "center" },
-  { id: "wins", label: "Wins", minWidth: 18, align: "center" },
-  { id: "losses", label: "Losses", minWidth: 18, align: "center" },
-  { id: "opt", label: "Opportunities", minWidth: 18, align: "center" },
-  { id: "putOut", label: "Put Out", minWidth: 18, align: "center" },
-  { id: "assist", label: "Assistances", minWidth: 18, align: "center" },
-  { id: "errors", label: "Errors", minWidth: 18, align: "center" },
-  { id: "avgErrors", label: "Avg Errors", minWidth: 18, align: "center" }
+  { id: "name", label: <h6>Name</h6>, minWidth: 30, align: "center" },
+  { id: "team", label: <h6>Team</h6>, minWidth: 18, align: "center" },
+  { id: "pos", label: <h6>Position</h6>, minWidth: 15, align: "center" },
+  { id: "type", label: <h6>Type</h6>, minWidth: 18, align: "center" },
+  { id: "numGames", label: <h6># of Games</h6>, minWidth: 18, align: "center" },
+  { id: "avgHits", label: <h6>Avg Hits</h6>, minWidth: 18, align: "center" },
+  { id: "atBat", label: <h6># At Bat</h6>, minWidth: 18, align: "center" },
+  { id: "runs", label: <h6>Runs</h6>, minWidth: 18, align: "center" },
+  { id: "hits", label: <h6>Hits</h6>, minWidth: 18, align: "center" },
+  { id: "hr", label: <h6>Home Runs</h6>, minWidth: 18, align: "center" },
+  { id: "wins", label: <h6>Wins</h6>, minWidth: 18, align: "center" },
+  { id: "losses", label: <h6>Losses</h6>, minWidth: 18, align: "center" },
+  { id: "opt", label: <h6>Opportunities</h6>, minWidth: 18, align: "center" },
+  { id: "putOut", label: <h6>Put Out</h6>, minWidth: 18, align: "center" },
+  { id: "assist", label: <h6>Assistances</h6>, minWidth: 18, align: "center" },
+  { id: "errors", label: <h6>Errores</h6>, minWidth: 18, align: "center" },
+  { id: "avgErrors", label: <h6>Avg Errors</h6>, minWidth: 18, align: "center" }
 ];
 
 function insertData(
@@ -70,9 +70,9 @@ function insertData(
 
 const rows = [
   insertData(
-    "Betts, M",
+    "Benintendi, A",
     "BOS",
-    "RF",
+    "LF",
     "Filding",
     "76",
     "0.22341",
@@ -103,7 +103,7 @@ const useStyles = makeStyles({
 export default function StickyHeadTable() {
   const classes = useStyles();
   const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(50);
+  const [rowsPerPage, setRowsPerPage] = React.useState(25);
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
@@ -154,7 +154,7 @@ export default function StickyHeadTable() {
         </Table>
       </div>
       <TablePagination
-        rowsPerPageOptions={[50, 100, 150]}
+        rowsPerPageOptions={[25, 50, 100, 150, 200]}
         component="div"
         count={rows.length}
         rowsPerPage={rowsPerPage}

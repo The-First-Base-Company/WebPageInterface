@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-import TableTeams from "./tableTeams";
+import { Alert, Badge } from "react-bootstrap";
+import TableTeams from "./tableTeamsStats";
 
 class StatsTeams extends Component {
   render() {
     return (
       <div>
-        <h1>Teams statistics</h1>
+        <Alert variant="info">
+          <h1 align="center">
+            <Badge variant="info">Teams statistics</Badge>
+          </h1>
+        </Alert>
         <TableTeams />
       </div>
     );

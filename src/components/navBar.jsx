@@ -104,7 +104,7 @@ const NavBar = () => {
           variant="light"
         >
           <h5 align="center">AL East</h5>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/0/8/2/267952082/cuts/320x180/cut.jpg"
               height="20"
@@ -112,7 +112,7 @@ const NavBar = () => {
             />
             Baltimore Orioles
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
               height="20"
@@ -120,7 +120,7 @@ const NavBar = () => {
             />
             Boston Red Sox
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/4/2/0/267952420/cuts/320x180/cut.jpg"
               height="20"
@@ -128,7 +128,7 @@ const NavBar = () => {
             />
             New York Yankees
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/4/2/8/267952428/cuts/320x180/cut.jpg"
               height="20"
@@ -136,7 +136,7 @@ const NavBar = () => {
             />
             Tampa Bay Rays
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/5/3/2/267952532/cuts/320x180/cut.jpg"
               height="20"
@@ -146,7 +146,7 @@ const NavBar = () => {
           </Dropdown.Item>
           <Dropdown.Divider />
           <h5 align="center">AL Central</h5>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/2/9/0/267952290/cuts/320x180/cut.jpg"
               height="20"
@@ -154,7 +154,7 @@ const NavBar = () => {
             />
             Chicago White Sox
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/2/9/4/267952294/cuts/320x180/cut.jpg"
               height="20"
@@ -162,7 +162,7 @@ const NavBar = () => {
             />
             Clevenland Indians
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/1/9/8/267952198/cuts/320x180/cut.jpg"
               height="20"
@@ -170,7 +170,7 @@ const NavBar = () => {
             />
             Ditroit Tigers
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/3/0/8/267952308/cuts/320x180/cut.jpg"
               height="20"
@@ -178,7 +178,7 @@ const NavBar = () => {
             />
             Kansas City Royals
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/4/1/2/267952412/cuts/320x180/cut.jpg"
               height="20"
@@ -188,7 +188,7 @@ const NavBar = () => {
           </Dropdown.Item>
           <Dropdown.Divider />
           <h5 align="center">AL West</h5>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/3/0/6/267952306/cuts/320x180/cut.jpg"
               height="20"
@@ -196,7 +196,7 @@ const NavBar = () => {
             />
             Houston Astros
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/3/1/2/267952312/cuts/320x180/cut.jpg"
               height="20"
@@ -204,7 +204,7 @@ const NavBar = () => {
             />
             Los Angeles Angels of Anaheim
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/5/2/0/267952520/cuts/320x180/cut.jpg"
               height="20"
@@ -212,7 +212,7 @@ const NavBar = () => {
             />
             Oakland Athletics
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/4/9/6/267952496/cuts/320x180/cut.jpg"
               height="20"
@@ -220,7 +220,7 @@ const NavBar = () => {
             />
             Seattle Mariners
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/4/3/2/267952432/cuts/320x180/cut.jpg"
               height="20"
@@ -245,7 +245,7 @@ const NavBar = () => {
           variant="dark"
         >
           <h5 align="center">NL East</h5>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/2/0/8/267951208/cuts/320x180/cut.jpg"
               height="20"
@@ -253,7 +253,7 @@ const NavBar = () => {
             />
             Atlanta Braves
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/6/7/2/300788672/cuts/320x180/cut.jpg"
               height="20"
@@ -261,7 +261,7 @@ const NavBar = () => {
             />
             Florida Marlins
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/5/5/6/267951556/cuts/320x180/cut.jpg"
               height="20"
@@ -269,7 +269,7 @@ const NavBar = () => {
             />
             New York Mets
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/8/6/0/267951860/cuts/320x180/cut.jpg"
               height="20"
@@ -277,7 +277,7 @@ const NavBar = () => {
             />
             Philadelphia Phillies
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/8/7/6/267951876/cuts/320x180/cut.jpg"
               height="20"
@@ -287,7 +287,7 @@ const NavBar = () => {
           </Dropdown.Item>
           <Dropdown.Divider />
           <h5 align="center">NL Central</h5>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/7/1/2/267951712/cuts/320x180/cut.jpg"
               height="20"
@@ -295,7 +295,7 @@ const NavBar = () => {
             />
             Chicago Cubs
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/7/2/2/267951722/cuts/320x180/cut.jpg"
               height="20"
@@ -303,7 +303,7 @@ const NavBar = () => {
             />
             Cincinnati Reds
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/8/4/0/267951840/cuts/320x180/cut.jpg"
               height="20"
@@ -311,7 +311,7 @@ const NavBar = () => {
             />
             Milwaukee Brewers
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/9/6/2/267951962/cuts/320x180/cut.jpg"
               height="20"
@@ -319,7 +319,7 @@ const NavBar = () => {
             />
             Pittsburgh Pirates
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/8/7/2/267951872/cuts/320x180/cut.jpg"
               height="20"
@@ -329,7 +329,7 @@ const NavBar = () => {
           </Dropdown.Item>
           <Dropdown.Divider />
           <h5 align="center">NL West</h5>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/7/1/8/267947718/cuts/320x180/cut.jpg"
               height="20"
@@ -337,7 +337,7 @@ const NavBar = () => {
             />
             Arizona Diamondbacks
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/7/2/4/267951724/cuts/320x180/cut.jpg"
               height="20"
@@ -345,7 +345,7 @@ const NavBar = () => {
             />
             Colorado Rockies
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/7/2/8/267951728/cuts/320x180/cut.jpg"
               height="20"
@@ -353,7 +353,7 @@ const NavBar = () => {
             />
             Los Angeles Dodgers
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/9/6/6/267951966/cuts/320x180/cut.jpg"
               height="20"
@@ -361,7 +361,7 @@ const NavBar = () => {
             />
             San Diego Padres
           </Dropdown.Item>
-          <Dropdown.Item href="/players_stats">
+          <Dropdown.Item href="/teams">
             <img
               src="https://securea.mlb.com/assets/images/9/7/0/267951970/cuts/320x180/cut.jpg"
               height="20"
