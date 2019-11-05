@@ -236,7 +236,7 @@ export default function Teams() {
                               height="20"
                               alt="logo"
                             />
-                            Ditroit Tigers
+                            Detroit Tigers
                           </ListGroup.Item>
                           <ListGroup.Item action href="#">
                             <img

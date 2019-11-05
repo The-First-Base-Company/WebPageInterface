@@ -168,7 +168,7 @@ const NavBar = () => {
               height="20"
               alt="logo"
             />
-            Ditroit Tigers
+            Detroit Tigers
           </Dropdown.Item>
           <Dropdown.Item href="/teams">
             <img
