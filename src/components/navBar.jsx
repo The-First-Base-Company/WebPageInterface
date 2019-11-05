@@ -98,13 +98,12 @@ const NavBar = () => {
                 height="25"
                 className="d-inline-block align-center"
               />
-              <h6>AL</h6>
             </div>
           }
           id="bg-nested-dropdown"
           variant="light"
         >
-          <h5 align="center">East</h5>
+          <h5 align="center">AL East</h5>
           <Dropdown.Item href="/players_stats">
             <img
               src="https://securea.mlb.com/assets/images/0/8/2/267952082/cuts/320x180/cut.jpg"
@@ -146,7 +145,7 @@ const NavBar = () => {
             Toronto Blue Jays
           </Dropdown.Item>
           <Dropdown.Divider />
-          <h5 align="center">Central</h5>
+          <h5 align="center">AL Central</h5>
           <Dropdown.Item href="/players_stats">
             <img
               src="https://securea.mlb.com/assets/images/2/9/0/267952290/cuts/320x180/cut.jpg"
@@ -188,7 +187,7 @@ const NavBar = () => {
             Minnesota Twins
           </Dropdown.Item>
           <Dropdown.Divider />
-          <h5 align="center">West</h5>
+          <h5 align="center">AL West</h5>
           <Dropdown.Item href="/players_stats">
             <img
               src="https://securea.mlb.com/assets/images/3/0/6/267952306/cuts/320x180/cut.jpg"
@@ -240,13 +239,12 @@ const NavBar = () => {
                 height="25"
                 className="d-inline-block align-center"
               />
-              <h6>NL</h6>
             </div>
           }
           id="bg-nested-dropdown"
           variant="dark"
         >
-          <h5 align="center">East</h5>
+          <h5 align="center">NL East</h5>
           <Dropdown.Item href="/players_stats">
             <img
               src="https://securea.mlb.com/assets/images/2/0/8/267951208/cuts/320x180/cut.jpg"
@@ -288,7 +286,7 @@ const NavBar = () => {
             Washington Nationals
           </Dropdown.Item>
           <Dropdown.Divider />
-          <h5 align="center">Central</h5>
+          <h5 align="center">NL Central</h5>
           <Dropdown.Item href="/players_stats">
             <img
               src="https://securea.mlb.com/assets/images/7/1/2/267951712/cuts/320x180/cut.jpg"
@@ -330,7 +328,7 @@ const NavBar = () => {
             St. Louis Cardinals
           </Dropdown.Item>
           <Dropdown.Divider />
-          <h5 align="center">West</h5>
+          <h5 align="center">NL West</h5>
           <Dropdown.Item href="/players_stats">
             <img
               src="https://securea.mlb.com/assets/images/7/1/8/267947718/cuts/320x180/cut.jpg"

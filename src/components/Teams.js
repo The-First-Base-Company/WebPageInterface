@@ -53,12 +53,12 @@ export default function Teams() {
                     <Typography className={classes.heading}>
                       <img
                         src={alIcon}
-                        alt="home"
+                        alt="logo"
                         height="60"
                         className="d-inline-block align-center"
                       />
                       <h4>
-                        <Badge variant="primary">East</Badge>
+                        <Badge variant="primary">American League East</Badge>
                       </h4>
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
@@ -158,7 +158,7 @@ export default function Teams() {
                         className="d-inline-block align-center"
                       />
                       <h4>
-                        <Badge variant="primary">Central</Badge>
+                        <Badge variant="primary">American League Central</Badge>
                       </h4>
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
@@ -258,7 +258,7 @@ export default function Teams() {
                         className="d-inline-block align-center"
                       />
                       <h4>
-                        <Badge variant="primary">West</Badge>
+                        <Badge variant="primary">American League West</Badge>
                       </h4>
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
@@ -358,7 +358,7 @@ export default function Teams() {
                         className="d-inline-block align-center"
                       />
                       <h4>
-                        <Badge variant="danger">East</Badge>
+                        <Badge variant="danger">National League East</Badge>
                       </h4>
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
@@ -458,7 +458,7 @@ export default function Teams() {
                         className="d-inline-block align-center"
                       />
                       <h4>
-                        <Badge variant="danger">Central</Badge>
+                        <Badge variant="danger">National League Central</Badge>
                       </h4>
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
@@ -558,7 +558,7 @@ export default function Teams() {
                         className="d-inline-block align-center"
                       />
                       <h4>
-                        <Badge variant="danger">West</Badge>
+                        <Badge variant="danger">National League West</Badge>
                       </h4>
                     </Typography>
                     <Typography className={classes.secondaryHeading}>
