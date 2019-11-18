@@ -3,7 +3,6 @@ import TableTopFivePlayers from "./tableTopFivePlayers";
 import TableTopFiveTeams from "./tableTopFiveTeams";
 import CardGame from "./cardGame";
 import CardResults from "./cardResults";
-import homeIcon from "./home.png";
 import {
   Row,
   Col,
