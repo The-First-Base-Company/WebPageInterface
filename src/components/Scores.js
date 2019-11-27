@@ -6,9 +6,9 @@ class Results extends Component {
   render() {
     return (
       <React.Fragment>
-        <Alert variant="success">
+        <Alert variant="dark">
           <h1 align="center">
-            <Badge variant="success">Scores</Badge>
+            <Badge variant="dark">Scores</Badge>
           </h1>
         </Alert>
         <main className="container">
@@ -16,8 +16,11 @@ class Results extends Component {
           <Row>
             <Col sm={12}>
               <Card>
-                <Card.Header as="h3">September 26, 2018</Card.Header>
+                <Card.Header as="h3" className="text-center">
+                  September 26, 2018
+                </Card.Header>
                 <Card.Header as="h4">Full Scoreboard</Card.Header>
+                <br />
                 <Card.Header as="h5">Final</Card.Header>
                 <CardResults
                   linkLocalTeamResults="https://www.mlb.com/orioles"

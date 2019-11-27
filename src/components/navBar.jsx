@@ -13,8 +13,7 @@ import { Button } from "react-bootstrap";
 import { ButtonGroup } from "react-bootstrap";
 import { Dropdown } from "react-bootstrap";
 import { DropdownButton } from "react-bootstrap";
-import LoginModal from "./loginModal";
-import SigninModal from "./signinModal";
+import FAQmodal from "./faqModal";
 
 const NavBar = () => {
   return (
@@ -305,7 +304,7 @@ const NavBar = () => {
           </Dropdown.Item>
           <Dropdown.Item href="/teams">
             <img
-              src="https://securea.mlb.com/assets/images/8/4/0/267951840/cuts/320x180/cut.jpg"
+              src="https://securea.mlb.com/assets/images/4/6/8/311913468/cuts/320x180/cut.jpg"
               height="20"
               alt="logo"
             />
@@ -373,12 +372,7 @@ const NavBar = () => {
       </ButtonGroup>
 
       <Navbar.Collapse className="justify-content-end">
-        <Nav.Link href="#">
-          <SigninModal />
-        </Nav.Link>
-        <Nav.Link href="#">
-          <LoginModal />
-        </Nav.Link>
+        <FAQmodal />
       </Navbar.Collapse>
     </Navbar>
   );
