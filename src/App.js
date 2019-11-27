@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavBar from "./components/navBar";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Scores from "./components/Scores";
 import Teams from "./components/Teams";
@@ -15,12 +15,14 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <NavBar />
-          <Route path="/home" component={Home} />
-          <Route path="/scores" component={Scores} />
-          <Route path="/teams" component={Teams} />
-          <Route path="/teams_stats" component={StatsTeams} />
-          <Route path="/players" component={Players} />
-          <Route path="/players_stats" component={StatsPlayers} />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/scores" component={Scores} />
+            <Route path="/teams" component={Teams} />
+            <Route path="/teams_stats" component={StatsTeams} />
+            <Route path="/players" component={Players} />
+            <Route path="/players_stats" component={StatsPlayers} />
+          </Switch>
         </div>
       </BrowserRouter>
     );

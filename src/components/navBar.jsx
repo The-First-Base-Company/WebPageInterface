@@ -17,8 +17,8 @@ import FAQmodal from "./faqModal";
 
 const NavBar = () => {
   return (
-    <Navbar bg="primary" variant="dark">
-      <Navbar.Brand href="/home">
+    <Navbar bg="dark" variant="dark">
+      <Navbar.Brand href="/">
         <img
           src={logo}
           alt="logo"
@@ -27,7 +27,7 @@ const NavBar = () => {
         />
         First Base Company
       </Navbar.Brand>
-      <Nav.Link href="/home">
+      <Nav.Link href="/">
         <Button variant="danger">
           <img
             src={homeIcon}
@@ -241,7 +241,7 @@ const NavBar = () => {
             </div>
           }
           id="bg-nested-dropdown"
-          variant="dark"
+          variant="primary"
         >
           <h5 align="center">NL East</h5>
           <Dropdown.Item href="/teams">

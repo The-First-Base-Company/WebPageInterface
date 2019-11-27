@@ -22,12 +22,12 @@ const useStyles = makeStyles(theme => ({
     width: "100%"
   },
   heading: {
-    fontSize: theme.typography.pxToRem(15),
-    flexBasis: "33.33%",
+    fontSize: theme.typography.pxToRem(25),
+    flexBasis: "40%",
     flexShrink: 0
   },
   secondaryHeading: {
-    fontSize: theme.typography.pxToRem(15),
+    fontSize: theme.typography.pxToRem(18),
     color: theme.palette.text.secondary
   }
 }));
@@ -52,14 +52,11 @@ export default function Teams() {
         <Row>
           <Col sm={12}>
             <div className={classes.root}>
-              <ExpansionPanel
-                expanded={expanded === "panel1"}
-                onChange={handleChange("panel1")}
-              >
+              <ExpansionPanel>
                 <ExpansionPanelSummary
                   expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1bh-content"
-                  id="panel1bh-header"
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
                 >
                   <Typography className={classes.heading}>
                     <img
@@ -68,10 +65,22 @@ export default function Teams() {
                       height="60"
                       className="d-inline-block align-center"
                     />
-                    <h4>
-                      <Badge variant="primary">American League East</Badge>
-                    </h4>
+
+                    <Badge variant="primary">American League</Badge>
                   </Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                  <Typography>
+                  <ExpansionPanel
+                expanded={expanded === "panel1"}
+                onChange={handleChange("panel1")}
+              >
+                <ExpansionPanelSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1bh-content"
+                  id="panel1bh-header"
+                >
+                  <Typography className={classes.heading}>AL East</Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
                       src="https://securea.mlb.com/assets/images/0/8/2/267952082/cuts/320x180/cut.jpg"
@@ -264,15 +273,7 @@ export default function Teams() {
                   id="panel2bh-header"
                 >
                   <Typography className={classes.heading}>
-                    <img
-                      src={alIcon}
-                      alt="home"
-                      height="60"
-                      className="d-inline-block align-center"
-                    />
-                    <h4>
-                      <Badge variant="primary">American League Central</Badge>
-                    </h4>
+                    AL Central
                   </Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
@@ -466,17 +467,7 @@ export default function Teams() {
                   aria-controls="panel3bh-content"
                   id="panel3bh-header"
                 >
-                  <Typography className={classes.heading}>
-                    <img
-                      src={alIcon}
-                      alt="home"
-                      height="60"
-                      className="d-inline-block align-center"
-                    />
-                    <h4>
-                      <Badge variant="primary">American League West</Badge>
-                    </h4>
-                  </Typography>
+                  <Typography className={classes.heading}>AL West</Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
                       src="https://securea.mlb.com/assets/images/3/0/6/267952306/cuts/320x180/cut.jpg"
@@ -677,14 +668,14 @@ export default function Teams() {
                   </Typography>
                 </ExpansionPanelDetails>
               </ExpansionPanel>
-              <ExpansionPanel
-                expanded={expanded === "panel4"}
-                onChange={handleChange("panel4")}
-              >
+                  </Typography>
+                </ExpansionPanelDetails>
+              </ExpansionPanel>
+              <ExpansionPanel>
                 <ExpansionPanelSummary
                   expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel4bh-content"
-                  id="panel4bh-header"
+                  aria-controls="panel2a-content"
+                  id="panel2a-header"
                 >
                   <Typography className={classes.heading}>
                     <img
@@ -693,10 +684,21 @@ export default function Teams() {
                       height="60"
                       className="d-inline-block align-center"
                     />
-                    <h4>
-                      <Badge variant="danger">National League East</Badge>
-                    </h4>
+                    <Badge variant="danger">National League East</Badge>
                   </Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                  <Typography>
+                  <ExpansionPanel
+                expanded={expanded === "panel4"}
+                onChange={handleChange("panel4")}
+              >
+                <ExpansionPanelSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel4bh-content"
+                  id="panel4bh-header"
+                >
+                  <Typography className={classes.heading}>NL East</Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
                       src="https://securea.mlb.com/assets/images/2/0/8/267951208/cuts/320x180/cut.jpg"
@@ -903,15 +905,7 @@ export default function Teams() {
                   id="panel1bh-header"
                 >
                   <Typography className={classes.heading}>
-                    <img
-                      src={nlIcon}
-                      alt="home"
-                      height="60"
-                      className="d-inline-block align-center"
-                    />
-                    <h4>
-                      <Badge variant="danger">National League Central</Badge>
-                    </h4>
+                    NL Central
                   </Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
@@ -1098,17 +1092,7 @@ export default function Teams() {
                   aria-controls="panel6bh-content"
                   id="panel6bh-header"
                 >
-                  <Typography className={classes.heading}>
-                    <img
-                      src={nlIcon}
-                      alt="home"
-                      height="60"
-                      className="d-inline-block align-center"
-                    />
-                    <h4>
-                      <Badge variant="danger">National League West</Badge>
-                    </h4>
-                  </Typography>
+                  <Typography className={classes.heading}>NL West</Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
                       src="https://securea.mlb.com/assets/images/7/1/8/267947718/cuts/320x180/cut.jpg"
@@ -1299,6 +1283,9 @@ export default function Teams() {
                         </Card.Body>
                       </Card>
                     </CardGroup>
+                  </Typography>
+                </ExpansionPanelDetails>
+              </ExpansionPanel>
                   </Typography>
                 </ExpansionPanelDetails>
               </ExpansionPanel>
