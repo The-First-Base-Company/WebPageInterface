@@ -8,6 +8,7 @@ import Teams from "./components/Teams";
 import Players from "./components/Players";
 import StatsPlayers from "./components/StatsPlayers";
 import StatsTeams from "./components/StatsTeams";
+import TeamPage from "./components/TeamPage";
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
             <Route path="/teams_stats" component={StatsTeams} />
             <Route path="/players" component={Players} />
             <Route path="/players_stats" component={StatsPlayers} />
+            <Route path="/team_page" component={TeamPage} />
           </Switch>
         </div>
       </BrowserRouter>

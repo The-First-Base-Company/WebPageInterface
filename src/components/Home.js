@@ -7,11 +7,14 @@ import { Row, Col, Card, Container, Alert, Badge } from "react-bootstrap";
 
 class Home extends Component {
   render() {
+    document.body.style.background =
+      "url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgIBwcHBw0IBwcHBw0HBwcHCA8ICQcNFREWFiARFRUYHSggGBolJxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAABAAIH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOmlIEkQRBBFEAUQSRBJEAigSKAAoAigZRQMooGUQABQAEAkkASQFJAiiCIIIogikCKIAogEUCWIgyigCIABoAA0AZRAANAACACSBAoEkQRSAkECkQRRBJEEUgSKAIoAigAaAAFAyiAAIACtAGUQABAJIASCBIIEggiiCKIIggiiAKQJFAEQARAANAACAAIAAgACKARABJAjEYCIaBGAgSCBIIEggikBSIApAEQARAAEAA0KDKIAUGgACAAIAJICYIYChghAkECQQJBAkECQQRBBJIEkgAIAKpABSAFFNAAGgACAAIAJIDFEoBMBAkQgSCBIIEggUCBIQFBAQkCCQCggEKhQQIAAgACAAIAJIEQQJBAkECWSDRZIEggSyQJZIFBAQkCFSAJAEEgAIAAgBQQCCQBJAjAgJBAkECQgaQIEhA0ggaQQFBAUECSAJIAgkABAIIAgkABAIFAkkBLJAkECQgaQIFAgSyQKCAoICggISBBIEEAQSBBAEEgCSBAoAQQRCAkIGkCBIQEhASyQKCAlkgkEBQQJBAgkCCAJIAgQCSQBJAkkBSQIpAikBRQJFAkkCRQBFAEUASQBJAgkASQBBAkEBCQJJA//2Q==)";
+
     return (
       <React.Fragment>
-        <Alert variant="dark">
+        <Alert variant="light">
           <h1 align="center">
-            <Badge variant="dark">Home</Badge>
+            <Badge variant="danger">Home</Badge>
           </h1>
         </Alert>
         <Container>
@@ -635,6 +638,37 @@ class Home extends Component {
               </div>
             </Col>
             <Col s={6} md={4}>
+              <Card className="text-center">
+                <Card.Header as="h5">Top news</Card.Header>
+                <div>
+                  <br />
+                  <iframe
+                    title="videoNews"
+                    height="195"
+                    width="320"
+                    src="https://www.youtube.com/embed/INDMWGQ7USk"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <br />
+                  <br />
+                  <img
+                    src="https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w1536/mlb/z7hn4h7dcqkteyykdckc"
+                    height="180"
+                    alt="new2"
+                  />
+                  <br />
+                  <br />
+                  <img
+                    src="https://img.mlbstatic.com/mlb-images/image/private/w_640,h_360/mlb/lmidtyhc8zbcjjjv0h5q"
+                    height="180"
+                    alt="new3"
+                  />
+                </div>
+                <br />
+              </Card>
+              <br />
               <Card>
                 <Card.Header as="h5" className="text-center">
                   Top 5 teams

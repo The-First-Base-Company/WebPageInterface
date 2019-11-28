@@ -6,7 +6,7 @@ class StatsPlayers extends Component {
   render() {
     return (
       <div>
-        <Alert variant="warning">
+        <Alert variant="light">
           <h1 align="center">
             <Badge variant="warning">Players statistics</Badge>
           </h1>

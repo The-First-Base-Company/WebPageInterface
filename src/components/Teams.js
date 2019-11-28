@@ -17,6 +17,10 @@ import {
   CardGroup
 } from "react-bootstrap";
 
+
+document.body.style.background = "url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgIBwcHBw0IBwcHBw0HBwcHCA8ICQcNFREWFiARFRUYHSggGBolJxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAABAAIH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOmlIEkQRBBFEAUQSRBJEAigSKAAoAigZRQMooGUQABQAEAkkASQFJAiiCIIIogikCKIAogEUCWIgyigCIABoAA0AZRAANAACACSBAoEkQRSAkECkQRRBJEEUgSKAIoAigAaAAFAyiAAIACtAGUQABAJIASCBIIEggiiCKIIggiiAKQJFAEQARAANAACAAIAAgACKARABJAjEYCIaBGAgSCBIIEggikBSIApAEQARAAEAA0KDKIAUGgACAAIAJICYIYChghAkECQQJBAkECQQRBBJIEkgAIAKpABSAFFNAAGgACAAIAJIDFEoBMBAkQgSCBIIEggUCBIQFBAQkCCQCggEKhQQIAAgACAAIAJIEQQJBAkECWSDRZIEggSyQJZIFBAQkCFSAJAEEgAIAAgBQQCCQBJAjAgJBAkECQgaQIEhA0ggaQQFBAUECSAJIAgkABAIIAgkABAIFAkkBLJAkECQgaQIFAgSyQKCAoICggISBBIEEAQSBBAEEgCSBAoAQQRCAkIGkCBIQEhASyQKCAlkgkEBQQJBAgkCCAJIAgQCSQBJAkkBSQIpAikBRQJFAkkCRQBFAEUASQBJAgkASQBBAkEBCQJJA//2Q==)"
+
+
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%"
@@ -42,9 +46,9 @@ export default function Teams() {
 
   return (
     <React.Fragment>
-      <Alert variant="dark">
+      <Alert variant="light">
         <h1 align="center">
-          <Badge variant="dark">Teams</Badge>
+          <Badge variant="warning">Teams</Badge>
         </h1>
       </Alert>
 
@@ -80,7 +84,7 @@ export default function Teams() {
                   aria-controls="panel1bh-content"
                   id="panel1bh-header"
                 >
-                  <Typography className={classes.heading}>AL East</Typography>
+                  <Typography className={classes.heading}><b>AL East</b></Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
                       src="https://securea.mlb.com/assets/images/0/8/2/267952082/cuts/320x180/cut.jpg"
@@ -92,24 +96,28 @@ export default function Teams() {
                       src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
                       height="20"
                       alt="logo"
+                      hspace="10"
                     />
                     BOS
                     <img
                       src="https://securea.mlb.com/assets/images/4/2/0/267952420/cuts/320x180/cut.jpg"
                       height="20"
                       alt="logo"
+                      hspace="10"
                     />
                     NYY
                     <img
                       src="https://securea.mlb.com/assets/images/4/2/8/267952428/cuts/320x180/cut.jpg"
                       height="20"
                       alt="logo"
+                      hspace="10"
                     />
                     TB
                     <img
                       src="https://securea.mlb.com/assets/images/5/3/2/267952532/cuts/320x180/cut.jpg"
                       height="20"
                       alt="logo"
+                      hspace="10"
                     />
                     TOR
                   </Typography>
@@ -273,7 +281,7 @@ export default function Teams() {
                   id="panel2bh-header"
                 >
                   <Typography className={classes.heading}>
-                    AL Central
+                    <b>AL Central</b>
                   </Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
@@ -467,7 +475,7 @@ export default function Teams() {
                   aria-controls="panel3bh-content"
                   id="panel3bh-header"
                 >
-                  <Typography className={classes.heading}>AL West</Typography>
+                  <Typography className={classes.heading}><b>AL West</b></Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
                       src="https://securea.mlb.com/assets/images/3/0/6/267952306/cuts/320x180/cut.jpg"
@@ -698,7 +706,7 @@ export default function Teams() {
                   aria-controls="panel4bh-content"
                   id="panel4bh-header"
                 >
-                  <Typography className={classes.heading}>NL East</Typography>
+                  <Typography className={classes.heading}><b>NL East</b></Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
                       src="https://securea.mlb.com/assets/images/2/0/8/267951208/cuts/320x180/cut.jpg"
@@ -905,7 +913,7 @@ export default function Teams() {
                   id="panel1bh-header"
                 >
                   <Typography className={classes.heading}>
-                    NL Central
+                    <b>NL Central</b>
                   </Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
@@ -1092,7 +1100,7 @@ export default function Teams() {
                   aria-controls="panel6bh-content"
                   id="panel6bh-header"
                 >
-                  <Typography className={classes.heading}>NL West</Typography>
+                  <Typography className={classes.heading}><b>NL West</b></Typography>
                   <Typography className={classes.secondaryHeading}>
                     <img
                       src="https://securea.mlb.com/assets/images/7/1/8/267947718/cuts/320x180/cut.jpg"

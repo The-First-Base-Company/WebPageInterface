@@ -7,13 +7,15 @@ import scoreIcon from "./scoreIcon.png";
 import teamIcon from "./teamIcon.png";
 import alIcon from "./AL.png";
 import nlIcon from "./NL.png";
-import { Navbar } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { Button } from "react-bootstrap";
-import { ButtonGroup } from "react-bootstrap";
-import { Dropdown } from "react-bootstrap";
-import { DropdownButton } from "react-bootstrap";
-import FAQmodal from "./faqModal";
+import {
+  Navbar,
+  Nav,
+  Button,
+  ButtonGroup,
+  Dropdown,
+  DropdownButton
+} from "react-bootstrap";
+import FAQmodal from "./helpModal";
 
 const NavBar = () => {
   return (
@@ -103,7 +105,7 @@ const NavBar = () => {
           variant="light"
         >
           <h5 align="center">AL East</h5>
-          <Dropdown.Item href="/teams">
+          <Dropdown.Item href="/team_page">
             <img
               src="https://securea.mlb.com/assets/images/0/8/2/267952082/cuts/320x180/cut.jpg"
               height="20"
@@ -379,51 +381,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-/*
-<Table>
-              <thead>
-                <tr>
-                  <th>AL EAST</th>
-                  <th>AL CENTRAL</th>
-                  <th>AL WEST</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="mlb.com/redsox" target="popup">
-                      <img
-                        src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
-                        alt="logo"
-                        height="25"
-                        className="d-inline-block align-left"
-                      />
-                      Boston Red Sox
-                    </a>
-                  </td>
-                  <td>
-                    <a href="mlb.com/redsox" target="popup">
-                      <img
-                        src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
-                        alt="logo"
-                        height="25"
-                        className="d-inline-block align-left"
-                      />
-                      Boston Red Sox
-                    </a>
-                  </td>
-                  <td>
-                    <a href="mlb.com/redsox" target="popup">
-                      <img
-                        src="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
-                        alt="logo"
-                        height="25"
-                        className="d-inline-block align-left"
-                      />
-                      Boston Red Sox
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </Table>*/

@@ -8,9 +8,9 @@ class Players extends Component {
 
     return (
       <React.Fragment>
-        <Alert variant="dark">
+        <Alert variant="light">
           <h1 align="center">
-            <Badge variant="dark">Players</Badge>
+            <Badge variant="warning">Players</Badge>
           </h1>
         </Alert>
         <main className="container">
