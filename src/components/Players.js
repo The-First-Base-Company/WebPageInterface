@@ -3,6 +3,9 @@ import { Alert, Badge, Row, Col, Card, Table } from "react-bootstrap";
 
 class Players extends Component {
   render() {
+    document.body.style.background =
+      "url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgIBwcHBw0IBwcHBw0HBwcHCA8ICQcNFREWFiARFRUYHSggGBolJxMTITEhJSkrLi4uFx8zODMsNygtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIALcBEwMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAABAAIH/8QAFhABAQEAAAAAAAAAAAAAAAAAAAER/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOmlIEkQRBBFEAUQSRBJEAigSKAAoAigZRQMooGUQABQAEAkkASQFJAiiCIIIogikCKIAogEUCWIgyigCIABoAA0AZRAANAACACSBAoEkQRSAkECkQRRBJEEUgSKAIoAigAaAAFAyiAAIACtAGUQABAJIASCBIIEggiiCKIIggiiAKQJFAEQARAANAACAAIAAgACKARABJAjEYCIaBGAgSCBIIEggikBSIApAEQARAAEAA0KDKIAUGgACAAIAJICYIYChghAkECQQJBAkECQQRBBJIEkgAIAKpABSAFFNAAGgACAAIAJIDFEoBMBAkQgSCBIIEggUCBIQFBAQkCCQCggEKhQQIAAgACAAIAJIEQQJBAkECWSDRZIEggSyQJZIFBAQkCFSAJAEEgAIAAgBQQCCQBJAjAgJBAkECQgaQIEhA0ggaQQFBAUECSAJIAgkABAIIAgkABAIFAkkBLJAkECQgaQIFAgSyQKCAoICggISBBIEEAQSBBAEEgCSBAoAQQRCAkIGkCBIQEhASyQKCAlkgkEBQQJBAgkCCAJIAgQCSQBJAkkBSQIpAikBRQJFAkkCRQBFAEUASQBJAgkASQBBAkEBCQJJA//2Q==)";
+
     return (
       <React.Fragment>
         <Alert variant="dark">
@@ -12,7 +15,7 @@ class Players extends Component {
         </Alert>
         <main className="container">
           <Row className="show-grid text-center">
-            <Col xs={12} sm={6} className="person">
+            <Col xs={12} sm={6}>
               <Card>
                 <Card.Header as="h5">Michael Nelson Trout</Card.Header>
                 <p>
@@ -45,8 +48,8 @@ class Players extends Component {
               </Card>
               <br />
             </Col>
-            <Col xs={12} sm={6} className="person">
-              <Table striped bordered size="md">
+            <Col xs={12} sm={6}>
+              <Table variant="light" striped bordered size="md">
                 <thead>
                   <tr>
                     <th>W</th>
