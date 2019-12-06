@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import TableTopFivePlayers from "./tableTopFivePlayers";
-import TableTopFiveTeams from "./tableTopFiveTeams";
+import Top5Teams from "./Top5Teams";
+import TopHitting from './TopHitting';
+import TopPitching from './TopPitching';
+import TopFielding from './TopFielding';
 import CardGame from "./cardGame";
 import CardResults from "./cardResults";
 import { Row, Col, Card, Container, Alert, Badge } from "react-bootstrap";
@@ -673,49 +675,22 @@ class Home extends Component {
                 <Card.Header as="h5" className="text-center">
                   Top 5 teams
                 </Card.Header>
-                <TableTopFiveTeams
-                  firstTeam="Los Angels Angels"
-                  linkFirstTeam="https://www.mlb.com/angels"
-                  logoFirstTeam="https://securea.mlb.com/assets/images/3/1/2/267952312/cuts/320x180/cut.jpg"
-                  secondTeam="Boston Red Sox"
-                  linkSecondTeam="https://www.mlb.com/redsox"
-                  logoSecondTeam="https://securea.mlb.com/assets/images/2/8/8/267952288/cuts/320x180/cut.jpg"
-                  thirdTeam="New York Yankees"
-                  linkThirdTeam="https://www.mlb.com/yankees"
-                  logoThirdTeam="https://securea.mlb.com/assets/images/4/2/0/267952420/cuts/320x180/cut.jpg"
-                  fourthTeam="Cleveland Indians"
-                  linkFourthTeam="https://www.mlb.com/indians"
-                  logoFourthTeam="https://securea.mlb.com/assets/images/2/9/4/267952294/cuts/320x180/cut.jpg"
-                  fifthTeam="Colorado Rockies"
-                  linkFifthTeam="https://www.mlb.com/rockies"
-                  logoFifthTeam="https://securea.mlb.com/assets/images/7/2/4/267951724/cuts/320x180/cut.jpg"
-                />
+                <Top5Teams />
               </Card>
               <br />
               <Card className="text-center">
-                <Card.Header as="h5">Top 5 players</Card.Header>
-                <TableTopFivePlayers
-                  firstPlayer="Mike Trout"
-                  linkFirstPlayer="https://www.mlb.com/player/mike-trout-545361"
-                  photoFirstPlayer="https://securea.mlb.com/mlb/images/players/head_shot/545361.jpg"
-                  teamFirstPlayer="Angels"
-                  secondPlayer="Mookie Betts"
-                  linkSecondPlayer="https://www.mlb.com/player/mookie-betts-605141"
-                  photoSecondPlayer="https://securea.mlb.com/mlb/images/players/head_shot/605141.jpg"
-                  teamSecondPlayer="Red sox"
-                  thirdPlayer="José Ramírez"
-                  linkThirdPlayer="https://www.mlb.com/player/jose-ramirez-608070"
-                  photoThirdPlayer="https://securea.mlb.com/mlb/images/players/head_shot/608070.jpg"
-                  teamThirdPlayer="Indians"
-                  fourthPlayer="Francisco Lindor"
-                  linkFourthPlayer="https://www.mlb.com/player/francisco-lindor-596019"
-                  photoFourthPlayer="https://securea.mlb.com/mlb/images/players/head_shot/596019.jpg"
-                  teamFourthPlayer="Indians"
-                  fifthPlayer="Nolan Arenado"
-                  linkFifthPlayer="https://www.mlb.com/player/nolan-arenado-571448"
-                  photoFifthPlayer="https://securea.mlb.com/mlb/images/players/head_shot/571448.jpg"
-                  teamFifthPlayer="Rockies"
-                />
+                <Card.Header as="h5">Top 5 Players (Hitting)</Card.Header>
+                <TopHitting />
+              </Card>
+              <br />
+              <Card className="text-center">
+                <Card.Header as="h5">Top 5 Players (Pitching)</Card.Header>
+                <TopPitching />
+              </Card>
+              <br />
+              <Card className="text-center">
+                <Card.Header as="h5">Top 5 Players (Fielding)</Card.Header>
+                <TopFielding />
               </Card>
             </Col>
           </Row>

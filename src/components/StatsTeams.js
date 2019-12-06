@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Alert, Badge } from "react-bootstrap";
-import TableTeams from "./tableTeamsStats";
+import TeamStats from './TeamStats';
 
 class StatsTeams extends Component {
   render() {
@@ -11,7 +11,9 @@ class StatsTeams extends Component {
             <Badge variant="warning">Teams statistics</Badge>
           </h1>
         </Alert>
-        <TableTeams />
+        <div class='container'>
+          <TeamStats />
+        </div>
       </div>
     );
   }

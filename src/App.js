@@ -18,12 +18,12 @@ class App extends Component {
           <NavBar />
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/scores" component={Scores} />
-            <Route path="/teams" component={Teams} />
-            <Route path="/teams_stats" component={StatsTeams} />
-            <Route path="/players" component={Players} />
-            <Route path="/players_stats" component={StatsPlayers} />
-            <Route path="/team_page" component={TeamPage} />
+            <Route path="/scores" exact component={Scores} />
+            <Route path="/teams" exact component={Teams} />
+            <Route path="/teams_stats" exact component={StatsTeams} />
+            <Route path="/players_stats" exact component={StatsPlayers} />
+            <Route path="/team/:id" exact component={TeamPage} />
+            <Route path="/player/:id" component={Players} />
           </Switch>
         </div>
       </BrowserRouter>
